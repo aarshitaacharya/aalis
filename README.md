@@ -27,4 +27,9 @@ Advisable to pass arguments within quotes.
 
 ## Example
 ```bash
+./install.sh "/dev/sda" "$(curl --silent ipapi.co/timezone)" "myhostname" "mypassword"
+```
+Note: The above example detects the timezone automatically. You can manually pass the timezone too, as shown below:
+```bash
 ./install.sh "/dev/sda" "Asia/Kolkata" "myhostname" "mypassword"
+```
